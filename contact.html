@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    <link rel="stylesheet" href="/FirstWebsite/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+        <div class="nav-links" id="navLinks">
+            <!-- icon X -->
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="/FirstWebsite/index.html">HOME</a></li>
+                <li><a href="/FirstWebsite/about.html">ABOUT</a></li>
+                <li><a href="/FirstWebsite/course-page.html">COURSE</a></li>
+                <li><a href="/FirstWebsite/blog.html">BLOG</a></li>
+                <li><a href="/FirstWebsite/contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <!-- icon menu -->
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+
+
+    </section>
+
+<!-- contact us -->
+<!-- adding location -->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.2312402759762!2d106.80305409999998!3d10.870008899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527587e9ad5bf%3A0xafa66f9c8be3c91!2sUniversity%20of%20Information%20Technology%20-%20VNUHCM!5e0!3m2!1sfr!2s!4v1665770769233!5m2!1sfr!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</section>
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <span>
+                    <h5>None</h5>
+                    <p>Mon - Sa</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-home"></i>
+                <span>
+                    <h5>Đường Hàn Thuyên, khu phố 6 P, Thủ Đức</h5>
+                    <p>Thành phố Hồ Chí Minh, Việt Nam</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <span>
+                    <h5>uit@gm.uit.edu.vn</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+        </div>
+
+        <div class="contact-col">
+
+
+            <form action="form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter email Address" required>
+                <input type="text" name="subject" placeholder="Enter your subject" required>
+                <textarea rows="8" name="Message" placeholder="message" required></textarea>
+                <button type="submit" class="hero-bth red-bth">Send Message</button>
+            </form>
+
+
+
+        </div>
+
+
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <section class="sub-footer">
+    <h4>About Us</h4>
+    <p>Minh Thành - Sinh viên UIT 
+        Mọi thông tin liên hệ xem tại: <a href="https://www.facebook.com/profile.php?id=100048036801128">link của tui</a>
+    <br>Đừng chọn UIT nếu bạn chưa sẵn sàng trở thành người dẫn đầu
+    </p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-solid fa-phone"></i>
+        <i class="fa-sharp fa-solid fa-house"></i>
+    </div>       
+    <p>Made with <i class="fa-solid fa-heart"></i> and MinhThanh</p>
+    </section>
+    <!-- JavaScrpit for Toggle Menu -->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0"
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px"
+    }
+</script>
+</body>
+</html>

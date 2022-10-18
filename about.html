@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    <link rel="stylesheet" href="/FirstWebsite/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header aboutIMG">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+        <div class="nav-links" id="navLinks">
+            <!-- icon X -->
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="/FirstWebsite/index.html">HOME</a></li>
+                <li><a href="/FirstWebsite/about.html">ABOUT</a></li>
+                <li><a href="/FirstWebsite/course-page.html">COURSE</a></li>
+                <li><a href="/FirstWebsite/blog.html">BLOG</a></li>
+                <li><a href="/FirstWebsite/contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <!-- icon menu -->
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+        <!-- about us content -->
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>Giới Thiệu Khoa "------"</h1>
+                    <p>The University of Information Technology is an undergraduate and graduate training center <br>that provides high-quality human resources to meet the needs of the labor market and serve the community.</p>
+                    <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+                </div>
+                <div class="about-col">
+                    <img src="/images/z3800642582272_54a039eb72b4c7e3f10f68a393756bcc.jpg" alt="">
+                </div>
+
+            </div>
+        </section>
+
+    <!-- sub-footer -->
+    <section class="sub-footer">
+    <p>Minh Thành - Sinh viên UIT 
+        Mọi thông tin liên hệ xem tại: <a href="https://www.facebook.com/profile.php?id=100048036801128">link của tui</a>
+    <br>Đừng chọn UIT nếu bạn chưa sẵn sàng trở thành người dẫn đầu
+    </p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-solid fa-phone"></i>
+        <i class="fa-sharp fa-solid fa-house"></i>
+    </div>       
+    <p>Made with <i class="fa-solid fa-heart"></i> and MinhThanh</p>
+    </section>
+    <!-- JavaScrpit for Toggle Menu -->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0"
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px"
+    }
+</script>
+</body>
+</html>

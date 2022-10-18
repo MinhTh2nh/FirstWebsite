@@ -7,7 +7,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner2.png);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/FirstWebsite/images/banner2.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -327,7 +327,7 @@ padding: 10px;
 .cta{
     margin: 26px auto;
     width: auto;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/banner2.png);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/FirstWebsite/images/banner2.png);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -383,16 +383,17 @@ padding: 18px 0;
 
 /* -----blog content------ */
 
-.blog-cotent{
-    
-        width: 65%;
+.blog-content{
+        width: 80%;
         margin: auto;
-        padding: 20px 0;
-        box-sizing: border-box;
-    
+        padding: 60px 0;
+}
+.blog-content .row{
+    display: grid;;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .blog-left{
-        flex-basis: 45%;
+    margin-bottom: 30px;
 }
 .blog-left img{
     width: 100%;
@@ -453,11 +454,15 @@ padding: 18px 0;
     width: 100%;
 }
 /* Khong split ra nhu Header duoc whyyyyyyyyyy */
+
 .contact-us{
     width: 80%;
     margin: auto;    
 }
-
+.contact-us .row{
+    display: inline-flex;
+    flex: auto;
+}
 .contact-col{
     flex-basis: 48%;
     margin-bottom: 30px;
@@ -499,17 +504,12 @@ margin-right: 30px;
 
 
 
-
-
-
-
-
 /* sub-header for blog page */
 .sub-header-blog{
     height: 50vh;
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),
-    url(/images/bannerblog.jpg);
+    url(/FirstWebsite/images/bannerblog.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -525,7 +525,7 @@ margin-right: 30px;
     height: 50vh;
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),
-    url(/images/background2.jpg);
+    url(/FirstWebsite/images/background2.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -533,7 +533,7 @@ margin-right: 30px;
     }
      .aboutIMG{
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),
-    url(/images/z3800642581072_f66bea05a853455c36f29ad82fdd6603.jpg);
+    url(/FirstWebsite/images/z3800642581072_f66bea05a853455c36f29ad82fdd6603.jpg);
  }   
 .sub-header h1{
         font-weight: 100;
@@ -571,7 +571,7 @@ a{
         text-align: center;
         padding: 0px 0;
         line-height: 30px;
-        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/banner2.png);
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/FirstWebsite/images/banner2.png);
     }
 .sub-footer h4{
         margin-bottom: 25px;
